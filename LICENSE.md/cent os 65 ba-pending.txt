@@ -1,0 +1,7 @@
+chmod 622 /var/log/wtmp
+chmod 622 /var/log/messages 
+chmod 750 /etc/pam.d
+chkconfig --level 0123456 rhnsd off
+rm -rf /etc/at.deny
+echo "-w /var/log/btmp -p wa -k session" >>/etc/audit/audit.rules
+echo "-w /var/log/wtmp -p wa -k session" >>/etc/audit/audit.rules

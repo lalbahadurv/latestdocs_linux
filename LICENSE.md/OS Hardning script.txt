@@ -1,0 +1,10 @@
+wget http://10.130.7.11/CENTOS/66/Packages/spacewalk-client.sh
+wget http://10.130.7.11/CENTOS/66/Packages/ba-working
+chmod 777 ba-working
+chmod 777 spacewalk-client.sh
+./spacewalk-client.sh
+wget http://10.130.7.11/CENTOS/65/Packages/details.txt
+wget http://10.130.7.11/CENTOS/65/Packages/postdeploy.sh
+chmod 777 postdeploy.sh
+./ba-working
+#./postdeploy.sh
